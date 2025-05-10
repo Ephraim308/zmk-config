@@ -82,10 +82,10 @@
 // |  Z  |  X  |  C  |  V  |  B  |  N  |  M  | ,  | .  | -FUN- |
 //                   |-SYM-| SPC | | RET |-NUM-|  
                         bindings = <
-   &kp Q &kp W &kp F &kp P &kp B &kp J &kp L   &kp U     &kp Y   &kp ENTER
-   &kp A &kp R &kp S &kp T &kp G &kp M &kp N   &kp E     &kp I   &kp O
-   &kp Z &kp X &kp C &kp D &kp V &kp K &kp H   &kp COMMA &kp DOT &kp LCTRL 
-                  &mo LSHIFT &mo SYM &kp SPACE &mo NUM
+   &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp ENTER
+   &kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
+   &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp LCTRL 
+                  &kp LSHIFT &mo SYM &kp SPACE &mo NUM
                         >;
                 };
                 symbol_layer {
@@ -95,9 +95,9 @@
 // |     |  `  |  @  |  &  |     | |BKSPC|  #  |  <  |  >  |-FUN-|
 //                   |_SYM_| SPC | | RET | ESC |
                         bindings = <
-   &none  &kp BSLH &kp PRCNT &kp DLLR  &none &none &kp CARET &kp LBRC &kp RBRC &none
-   &kp STAR &kp LPAR &kp RPAR  &kp COLON &none &kp TAB &kp DQT   &kp LBKT &kp RBKT &kp SEMI
-   &mo FUN  &kp GRAVE   &kp AT  &kp AMPS  &none &kp BACKSPACE &kp HASH &kp LT   &kp GT   &kp DEL
+   &none    &kp BSLH  &kp PRCNT &kp DLLR  &none &none &kp CARET &kp LBRC &kp RBRC &none
+   &kp STAR &kp LPAR  &kp RPAR  &kp COLON &none &kp TAB &kp DQT   &kp LBKT &kp RBKT &kp SEMI
+   &mo FUN  &kp GRAVE &kp AT    &kp AMPS  &none &kp BACKSPACE &kp HASH &kp LT &kp GT &kp DEL
                              &trans &kp SPACE &kp RET &kp ESC
                         >;
                 };
