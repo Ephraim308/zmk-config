@@ -114,20 +114,19 @@
                         >;
                 };
 
-        symbol_layer {
-            // -----------------------------------------------------------------
-            // |     |  \  |  %  |  $  |     | |     |  ^  |  {  |  }  |     |
-            // |  *  |  (  |  )  |  :  |     | |     |  "  |  [  |  ]  |  ;  |
-            // |     |  `  |  @  |  &  |     | |     |  #  |  <  |  >  |-FUN-|
-            //                   |_SYM_| SPC | | RET | ESC |
-
-            bindings = <
-&none     &kp BSLH   &kp PRCNT  &kp DLLR   &none        &none             &kp CARET  &kp LBRC  &kp RBRC  &kp BACKSPACE
-&kp STAR  &kp LPAR   &kp RPAR   &kp COLON  &none        &kp SINGLE_QUOTE  &kp DQT    &kp LBKT  &kp RBKT  &kp SEMI
-&mo FUN   &kp GRAVE  &kp AT     &kp AMPS   &none        &none             &kp HASH   &kp LT    &kp GT    &kp DEL
-                                &trans     &kp SPACE    &kp RET           &kp ESC
-            >;
-        };
+                symbol_layer {
+// -----------------------------------------------------------------
+// |     |  \  |  %  |  $  |     | |     |  ^  |  {  |  }  |     |
+// |  *  |  (  |  )  |  :  |     | | TAB |  "  |  [  |  ]  |  ;  |
+// |     |  `  |  @  |  &  |     | |BKSPC|  #  |  <  |  >  |-FUN-|
+//                   |_SYM_| SPC | | RET | ESC |
+                        bindings = <
+   &none    &kp BSLH  &kp PRCNT &kp DLLR  &none &none &kp CARET &kp LBRC &kp RBRC &none
+   &kp STAR &kp LPAR  &kp RPAR  &kp COLON &none &kp TAB &kp DQT   &kp LBKT &kp RBKT &kp SEMI
+   &mo FUN  &kp GRAVE &kp AT    &kp AMPS  &none &kp BACKSPACE &kp HASH &kp LT &kp GT &kp DEL
+                             &trans &kp SPACE &kp RET &kp ESC
+                        >;
+                };
 
         number_layer {
             // -----------------------------------------------------------------
@@ -220,19 +219,6 @@
 /* / { */
 /*         keymap { */
 /*                 compatible = "zmk,keymap"; */
-/*                 symbol_layer { */
-/* // ----------------------------------------------------------------- */
-/* // |     |  \  |  %  |  $  |     | |     |  ^  |  {  |  }  |     | */
-/* // |  *  |  (  |  )  |  :  |     | | TAB |  "  |  [  |  ]  |  ;  | */
-/* // |     |  `  |  @  |  &  |     | |BKSPC|  #  |  <  |  >  |-FUN-| */
-/* //                   |_SYM_| SPC | | RET | ESC | */
-/*                         bindings = < */
-/*    &none    &kp BSLH  &kp PRCNT &kp DLLR  &none &none &kp CARET &kp LBRC &kp RBRC &none */
-/*    &kp STAR &kp LPAR  &kp RPAR  &kp COLON &none &kp TAB &kp DQT   &kp LBKT &kp RBKT &kp SEMI */
-/*    &mo FUN  &kp GRAVE &kp AT    &kp AMPS  &none &kp BACKSPACE &kp HASH &kp LT &kp GT &kp DEL */
-/*                              &trans &kp SPACE &kp RET &kp ESC */
-/*                         >; */
-/*                 }; */
 /*                 number_layer { */
 /* // ----------------------------------------------------------------- */
 /* // |     |  4  |  5  |  6  |LA(1)| |LA(4)|  |  |  -  |  /  |     | */
