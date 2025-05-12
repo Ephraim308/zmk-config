@@ -123,7 +123,7 @@
                         bindings = <
    &none    &kp BSLH  &kp PRCNT &kp DLLR  &none &none &kp CARET &kp LBRC &kp RBRC &none
    &kp STAR &kp LPAR  &kp RPAR  &kp COLON &none &kp TAB &kp DQT   &kp LBKT &kp RBKT &kp SEMI
-   &mo FUN  &kp GRAVE &kp AT    &kp AMPS  &none &kp BACKSPACE &kp HASH &kp LT &kp GT &kp DEL
+   &mo FUN  &kp GRAVE &kp AT    &kp AMPS  &none &kp BACKSPACE &kp HASH &kp LT &kp GT &trans
                              &trans &kp SPACE &kp RET &kp ESC
                         >;
                 };
@@ -137,7 +137,7 @@
                         bindings = <
    &kp BSPC  &kp N4 &kp N5 &kp N6 &kp LA(1) &kp LA(4) &kp PIPE &kp MINUS &kp FSLH  &none
    &kp DOT &kp N1 &kp N2 &kp N3 &kp LA(2) &none &kp SQT  &kp UNDER &kp EQUAL &mo NAV  
-   &kp TILDE  &kp N7 &kp N8 &kp N9 &kp LA(3) &none &kp PLUS &kp QMARK  &kp EXCL    &mo FUN 
+   &kp TILDE  &kp N7 &kp N8 &kp N9 &kp LA(3) &none &kp PLUS &kp QMARK  &kp EXCL    &trans
                  &kp N0 &kp SPACE &kp RET  &trans
                         >;
                 };
@@ -150,7 +150,7 @@
                         bindings = <
    &none &none &none &none &none &none    &none     &none     &none     &none 
    &none &none &none &none &none &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans  
-   &none &none &none &none &none &kp HOME &kp PG_DN &kp PG_UP &kp END   &none 
+   &none &none &none &none &none &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans
                          &none &trans &trans &trans
                         >;
                 };
